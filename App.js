@@ -4,10 +4,12 @@
  * @flow
  */
 
- import React from 'react';
- import SplashScreen from './components/SplashScreen';
- import { StackNavigator } from 'react-navigation';
+import React from 'react';
+import SplashScreen from './components/SplashScreen';
+import Lights from './components/appComponents/Lights';
+import { StackNavigator } from 'react-navigation';
 
- export default App = StackNavigator({
-   SplashScreen: { screen: SplashScreen }
- });
+export default App = StackNavigator({
+  SplashScreen: { screen: SplashScreen },
+  Lights: {screen: Lights }
+});

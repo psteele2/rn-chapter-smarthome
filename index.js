@@ -9,13 +9,11 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-  Button
+  View
 } from 'react-native';
 
 export default class SplashScreen extends Component {
   render() {
-    const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -36,17 +34,16 @@ export default class SplashScreen extends Component {
         <Text style={styles.instructions}>
           Thermostat
         </Text>
-        <Button
-          onPress={ () => navigate('Lights') }
-          title='House lights'
-        />
+        <Text style={styles.instructions}>
+          House lights
+        </Text>
         <Text style={styles.instructions}>
           Security system
         </Text>
       </View>
     );
   }
-};
+}
 
 const styles = StyleSheet.create({
   container: {
