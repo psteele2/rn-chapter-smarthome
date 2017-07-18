@@ -6,12 +6,12 @@
 
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import App from './App';
+import Container from './components/Container';
 
 export default class SmartHome extends Component {
   render() {
     return (
-      <App />
+      <Container />
     );
   }
 }

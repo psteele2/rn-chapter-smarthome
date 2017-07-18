@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import SplashScreen from './components/SplashScreen';
-import Lights from './components/appComponents/Lights';
+import SplashScreen from './SplashScreen';
+import Lights from './appComponents/Lights';
 import { StackNavigator } from 'react-navigation';
 
 export default App = StackNavigator({
