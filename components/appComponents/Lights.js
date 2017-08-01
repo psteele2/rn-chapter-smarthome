@@ -5,12 +5,28 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, Text } from 'react-native';
+import {
+  AppRegistry,
+  Text,
+  Button,
+  View
+} from 'react-native';
 
 export default class Lights extends Component {
   render() {
+    const { lightsOn, onToggleLights } = this.props;
     return (
-      <Text>This is the lights app, come back later for functionality</Text>
+      <View>
+        <Text>Control your lights with the toggle below!</Text>
+        <Button
+          // is this right? redux way of getting this
+          onPress={onToggleLights}
+          title="On/Off"
+          color="#841584"
+          accessibilityLabel="Turn lights on or off"
+        />
+        <Text>Lights are { lightsOn ? "on" : "off" }</Text>
+      </View>
     );
   }
 }

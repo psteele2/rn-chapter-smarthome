@@ -5,11 +5,13 @@
  */
 
 import React from 'react';
-import SplashScreen from './components/SplashScreen';
-import Lights from './components/appComponents/Lights';
+import SplashScreen from './SplashScreen';
+// import Lights from './appComponents/Lights';
+import ContainerLights from '../containers/ContainerLights'
 import { StackNavigator } from 'react-navigation';
 
 export default App = StackNavigator({
   SplashScreen: { screen: SplashScreen },
-  Lights: {screen: Lights }
+  // Lights: {screen: Lights }
+  Lights: {screen: ContainerLights}
 });
