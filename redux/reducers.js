@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux';
 import { TOGGLE_LIGHTS } from './actions';
 
-function lights(state = [], action) {
+function lights(state = {}, action) {
   switch (action.type) {
   case TOGGLE_LIGHTS:
-    return state.map((lightsOn) => {
-      return !lightsOn;
-    });
+    return {
+      ...state,
+      lightsOn: !state.lightsOn
+    };
   default:
     return state;
   }

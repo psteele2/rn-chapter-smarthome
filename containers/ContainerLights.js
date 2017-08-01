@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { toggleLights } from '../redux/actions';
-import Lights from '../components/Lights';
+import Lights from '../components/appComponents/Lights';
 
 const mapStateToProps = (state) => {
   return {
-    lightsOn: state.lightsOn;
+    lightsOn: state.lights.lightsOn
   };
 };
 
